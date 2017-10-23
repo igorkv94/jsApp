@@ -1,0 +1,38 @@
+.modalBack{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+.modal {
+  background: #fff;
+  border: 10px solid #000;
+  margin: 50px;
+  overflow-y: auto;
+  width: calc(100% - 120px);
+  min-height: 200px;
+  max-height: calc(100vh - 120px);
+  
+  .modal__close {
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+}
